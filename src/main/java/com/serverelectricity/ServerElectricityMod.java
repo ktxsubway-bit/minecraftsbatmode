@@ -10,7 +10,6 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
-import net.minecraft.particle.DustParticleEffect;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -26,9 +25,9 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.World;
-import org.joml.Vector3f;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ServerElectricityMod implements ModInitializer {
     public static final String MOD_ID = "server_electricity";
@@ -255,7 +254,7 @@ public class ServerElectricityMod implements ModInitializer {
                         return ActionResult.SUCCESS;
                     }
                     if (machine.isBroken()) {
-                        sendLangMessage(player, "machine_broken", "⚠️ 기계가 고장났습니다! 구리 주괴로 수리하세요.", "⚠️ Machine broken! Repair with Copper Ingot.", "⚠️ 机器故障！请使用铜锭修复。", "⚠️ 故障中！銅インゴットで修理してください。");
+                        sendLangMessage(player, "machine_broken", "⚠️ 기계가 고장났습니다! 구리 주괴로 수리하세요.", "⚠️ Machine broken! Repair with Copper Ingot.", "⚠️ 机器故障！请사용铜锭修复。", "⚠️ 故障中！銅インゴットで修理してください。");
                         return ActionResult.SUCCESS;
                     }
                     
