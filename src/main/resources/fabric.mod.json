@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "server_electricity",
+  "version": "${version}",
+  "name": "Server Electricity Mod",
+  "description": "Server-side electricity simulation mod",
+  "authors": ["User"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.serverelectricity.ServerElectricityMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.7",
+    "minecraft": "~1.20.4",
+    "java": ">=21"
+  }
+}
