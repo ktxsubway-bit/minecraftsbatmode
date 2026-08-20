@@ -1,6 +1,6 @@
 plugins {
-    id 'net.fabricmc.fabric-loom' version '1.10.5' // 또는 최신 1.11+ 버전
-    // 기존에 id 'fabric-loom' version '1.7-SNAPSHOT' 으로 되어 있던 부분을 교체합니다.
+    id 'fabric-loom' version '1.10.5'
+    id 'maven-publish'
 }
 
 version = '1.0.0'
